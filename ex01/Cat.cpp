@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 06:26:42 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/14 06:55:17 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/14 18:23:44 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ Cat::Cat() : Animal()
 {
 	std::cout << "Cat -> Have just been constructed" << std::endl;
 	this->type = "Cat";
+	brain =  new Brain;
 }
 
 Cat::Cat(const Cat &Cat) : Animal()

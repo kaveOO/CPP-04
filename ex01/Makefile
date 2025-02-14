@@ -9,6 +9,7 @@ SRC			=	main.cpp		\
 				Cat.cpp			\
 				WrongCat.cpp	\
 				WrongAnimal.cpp	\
+				Brain.cpp		\
 
 OBJ 		= $(SRC:.cpp=.o)
 
