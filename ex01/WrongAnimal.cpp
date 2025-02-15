@@ -16,12 +16,14 @@
 WrongAnimal::WrongAnimal() : type("None")
 {
 	std::cout << "WrongAnimal -> Have just been constructed" << std::endl;
+	sound = "I'm a wrong animal aouuuuuuuuuuh";
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &WrongAnimal)
 {
 	std::cout << "WrongAnimal -> Have just been copied" << std::endl;
-	this->type = WrongAnimal.type;
+	type = WrongAnimal.type;
+	sound = WrongAnimal.sound;
 }
 
 // Destructor(s)
@@ -47,5 +49,5 @@ std::string WrongAnimal::getType() const
 // Function(s)
 void WrongAnimal::makeSound() const
 {
-	std::cout << this->type << " -> No sound in here" << std::endl;
+	std::cout << this->sound << " -> No sound in here" << std::endl;
 }

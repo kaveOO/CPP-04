@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 06:02:36 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 08:25:13 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 22:25:12 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ Dog::Dog() : Animal()
 	brain = new Brain();
 }
 
-Dog::Dog(const Dog &Dog) : Animal()
+Dog::Dog(const Dog &Dog) : Animal(Dog)
 {
 	std::cout << "Dog -> Have just been copied" << std::endl;
-	type = Dog.type;
+	*this = Dog;
 }
 
 // Destructor(s)
@@ -36,11 +36,10 @@ Dog::~Dog()
 
 // Overload Operator(S)
 Dog &Dog::operator=(const Dog &Assign)
-{	
+{
 	std::cout << "Dog -> Have just been assigned" << std::endl;
-	type = Assign.type;
 	Animal::operator=(Assign);
-	brain = new Brain(*Assign.brain);
+	this->brain = new Brain(*Assign.brain);
 	return (*this);
 }
 

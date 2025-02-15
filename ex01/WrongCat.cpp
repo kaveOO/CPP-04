@@ -16,7 +16,7 @@
 WrongCat::WrongCat() : WrongAnimal()
 {
 	std::cout << "WrongCat -> Have just been constructed" << std::endl;
-	this->type = "WrongCat";
+	type = "WrongCat";
 }
 
 WrongCat::WrongCat(const WrongCat &WrongCat) : WrongAnimal()

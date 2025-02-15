@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 06:03:06 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 07:26:18 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 22:01:35 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ class Dog : public Animal
 		// Overload Operator(s)
 		Dog &operator=(const Dog &Assign);
 		// Function(s)
-		void makeSound() const;
+		virtual void makeSound() const;
 };

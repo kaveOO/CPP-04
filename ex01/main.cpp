@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:39:26 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 15:26:41 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 23:05:27 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,6 @@ int main()
 		animals[i]->makeSound();
 		delete animals[i];
 	}
+	// Dog basic;
+	// Dog tmp = basic;
 }
