@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:48:07 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 08:22:46 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 15:20:47 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,9 @@ class Animal
 	protected:
 		std::string type;
 		std::string noise;
-		Animal &operator=(const Animal &Assign);
+		Animal(const Animal &Src);
 		Animal();
 	public:
-		// Constructor(s)
-		Animal();
-		Animal(const Animal &Animal);
 		// Destructor(s)
 		virtual ~Animal();
 		// Overload Operator(s)

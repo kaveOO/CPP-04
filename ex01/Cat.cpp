@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 06:26:42 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 08:17:04 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 15:22:41 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ Cat::Cat() : Animal()
 {
 	std::cout << "Cat -> Have just been constructed" << std::endl;
 	type = "Cat";
+	noise = "Meowwwwwwwwwwwww";
 	brain = new Brain();
 }
 

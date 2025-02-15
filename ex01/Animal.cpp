@@ -6,14 +6,14 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:41:01 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 08:21:39 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 15:30:03 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
 // Constructor(s)
-Animal::Animal() : type("None")
+Animal::Animal() : type("None"), noise("Default Meowwwww")
 {
 	std::cout << "Animal -> Have just been constructed" << std::endl;
 }

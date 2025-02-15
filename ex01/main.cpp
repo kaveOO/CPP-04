@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:39:26 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 08:20:33 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 15:26:41 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-	Animal animals[4];
+	Animal *animals[4];
 	for (size_t i = 0; i < 4; i++)
 	{
 		if (i % 2 == 0)
@@ -26,9 +26,9 @@ int main()
 			animals[i] = new Dog();
 		}
 	}
-
 	for (size_t i = 0; i < 4; i++)
 	{
-		animals[i].makeSound();
+		animals[i]->makeSound();
+		delete animals[i];
 	}
 }
