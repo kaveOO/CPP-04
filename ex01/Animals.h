@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Animals.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/14 06:03:06 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 07:26:18 by albillie         ###   ########.fr       */
+/*   Created: 2025/02/15 07:21:10 by albillie          #+#    #+#             */
+/*   Updated: 2025/02/15 07:23:10 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include "Animal.hpp"
-#include "Brain.hpp"
+#include <iostream>
 
-class Dog : public Animal
-{
-	private:
-		Brain *brain;
-	public:
-		// Constructor(s)
-		Dog();
-		Dog(const Dog &Dog);
-		// Destructor(s)
-		~Dog();
-		// Overload Operator(s)
-		Dog &operator=(const Dog &Assign);
-		// Function(s)
-		void makeSound() const;
-};
+#include "Animal.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
+#include "Brain.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"

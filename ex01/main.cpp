@@ -6,21 +6,29 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:39:26 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/14 19:09:38 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 08:20:33 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "WrongCat.hpp"
-#include "Brain.hpp"
+#include "Animals.h"
 
 int main()
 {
-	Brain brain;
-
-	for (size_t i = 0; i < 10; i++)
+	Animal animals[4];
+	for (size_t i = 0; i < 4; i++)
 	{
+		if (i % 2 == 0)
+		{
+			animals[i] = new Cat();
+		}
+		else
+		{
+			animals[i] = new Dog();
+		}
 	}
 
+	for (size_t i = 0; i < 4; i++)
+	{
+		animals[i].makeSound();
+	}
 }

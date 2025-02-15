@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:41:01 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/14 06:57:20 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/15 08:21:39 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ Animal::~Animal()
 Animal &Animal::operator=(const Animal &Assign)
 {
 	std::cout << "Animal -> Have just been assigned" << std::endl;
-	this->type = Assign.type;
+	noise = Assign.noise;
+	type = Assign.type;
 	return (*this);
 }
 
@@ -47,5 +48,5 @@ std::string Animal::getType() const
 // Function(s)
 void Animal::makeSound() const
 {
-	std::cout << this->type << " -> No sound in here" << std::endl;
+	std::cout << this->noise << std::endl;
 }
