@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 04:57:34 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/16 04:57:51 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 05:00:57 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ Cure &Cure::operator=(const Cure &assign)
 }
 
 // Other(s) Function(s)
-
 AMateria *Cure::clone() const
 {
 	return (new Cure(*this));
