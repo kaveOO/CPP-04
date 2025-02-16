@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 03:50:24 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/16 04:19:12 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 04:40:15 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class Ice : public AMateria
 		~Ice();
 		// Overloard Operator(s)
 		Ice &operator=(const Ice &assign);
+		// Other(s) Function(s)
 		AMateria *clone() const;
 		void use(ICharacter &target);
 };
