@@ -13,17 +13,16 @@
 #include "WrongAnimal.hpp"
 
 // Constructor(s)
-WrongAnimal::WrongAnimal() : type("None")
+WrongAnimal::WrongAnimal() : type("None"), noise("Default Meowwwww")
 {
 	std::cout << "WrongAnimal -> Have just been constructed" << std::endl;
-	sound = "I'm a wrong animal aouuuuuuuuuuh";
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &WrongAnimal)
 {
 	std::cout << "WrongAnimal -> Have just been copied" << std::endl;
 	type = WrongAnimal.type;
-	sound = WrongAnimal.sound;
+	noise = WrongAnimal.noise;
 }
 
 // Destructor(s)
@@ -36,7 +35,8 @@ WrongAnimal::~WrongAnimal()
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &Assign)
 {
 	std::cout << "WrongAnimal -> Have just been assigned" << std::endl;
-	this->type = Assign.type;
+	type = Assign.type;
+	noise = Assign.noise;
 	return (*this);
 }
 
@@ -49,5 +49,5 @@ std::string WrongAnimal::getType() const
 // Function(s)
 void WrongAnimal::makeSound() const
 {
-	std::cout << this->sound << " -> No sound in here" << std::endl;
+	std::cout << noise << std::endl;
 }

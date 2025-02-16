@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 06:26:40 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 22:01:30 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 01:04:37 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Cat : public Animal
 		Cat();
 		Cat(const Cat &Cat);
 		// Destructor(s)
-		~Cat();
+		virtual ~Cat();
 		// Overload Operator(s)
 		Cat &operator=(const Cat &Assign);
 		// Function(s)

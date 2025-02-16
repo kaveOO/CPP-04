@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 06:26:42 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 15:22:41 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 01:25:23 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ Cat::Cat() : Animal()
 Cat::Cat(const Cat &Cat) : Animal(Cat)
 {
 	std::cout << "Cat -> Have just been copied" << std::endl;
-	this->type = Cat.type;
+	type = Cat.type;
+	noise = Cat.noise;
 }
 
 // Destructor(s)
@@ -38,12 +39,12 @@ Cat::~Cat()
 Cat &Cat::operator=(const Cat &Assign)
 {
 	std::cout << "Cat -> Have just been assigned" << std::endl;
-	this->brain = new Brain(*Assign.brain);
+	brain = new Brain(*Assign.brain);
 	return (*this);
 }
 
 // Function(s)
 void Cat::makeSound() const
 {
-	std::cout << this->noise << std::endl;
+	std::cout << noise << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:41:01 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 15:30:03 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 01:23:22 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ Animal::Animal() : type("None"), noise("Default Meowwwww")
 Animal::Animal(const Animal &Animal)
 {
 	std::cout << "Animal -> Have just been copied" << std::endl;
-	this->type = Animal.type;
+	type = Animal.type;
+	noise = Animal.noise;
 }
 
 // Destructor(s)
@@ -48,5 +49,5 @@ std::string Animal::getType() const
 // Function(s)
 void Animal::makeSound() const
 {
-	std::cout << this->noise << std::endl;
+	std::cout << noise << std::endl;
 }

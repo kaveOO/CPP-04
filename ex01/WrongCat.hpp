@@ -16,12 +16,14 @@
 
 class WrongCat : public WrongAnimal
 {
+	private:
+		Brain *brain;
 	public:
 		// Constructor(s)
 		WrongCat();
 		WrongCat(const WrongCat &WrongCat);
 		// Destructor(s)
-		~WrongCat();
+		virtual ~WrongCat();
 		// Overload Operator(s)
 		WrongCat &operator=(const WrongCat &Assign);
 		// Function(s)

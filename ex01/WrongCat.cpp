@@ -10,24 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongCat.hpp"
+#include "Animals.h"
 
 // Constructor(s)
 WrongCat::WrongCat() : WrongAnimal()
 {
 	std::cout << "WrongCat -> Have just been constructed" << std::endl;
 	type = "WrongCat";
+	noise = "Meowwwwwwwwwwwww";
+	brain = new Brain;
 }
 
-WrongCat::WrongCat(const WrongCat &WrongCat) : WrongAnimal()
+WrongCat::WrongCat(const WrongCat &WrongCat) : WrongAnimal(WrongCat)
 {
 	std::cout << "WrongCat -> Have just been copied" << std::endl;
-	this->type = WrongCat.type;
+	type = WrongCat.type;
+	noise = WrongCat.noise;
 }
 
 // Destructor(s)
 WrongCat::~WrongCat()
 {
+	delete brain;
 	std::cout << "WrongCat -> Have just been destroyed" << std::endl;
 }
 
@@ -35,12 +39,12 @@ WrongCat::~WrongCat()
 WrongCat &WrongCat::operator=(const WrongCat &Assign)
 {
 	std::cout << "WrongCat -> Have just been assigned" << std::endl;
-	this->type = Assign.type;
+	brain = new Brain(*Assign.brain);
 	return (*this);
 }
 
 // Function(s)
 void WrongCat::makeSound() const
 {
-	std::cout << this->type << " -> Meowwwwwwwww" << std::endl;
+	std::cout << noise << std::endl;
 }

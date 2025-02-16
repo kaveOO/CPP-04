@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 06:03:06 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 22:01:35 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 01:04:33 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Dog : public Animal
 		Dog();
 		Dog(const Dog &Dog);
 		// Destructor(s)
-		~Dog();
+		virtual ~Dog();
 		// Overload Operator(s)
 		Dog &operator=(const Dog &Assign);
 		// Function(s)

@@ -6,7 +6,7 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 05:39:26 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/15 23:05:27 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 01:27:42 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 int main()
 {
 	Animal *animals[4];
+
+	std::cout << " -> ********************* ! <-" << std::endl;
+	std::cout << " -> CONSTRUCTORS OUT HERE ! <-" << std::endl;
+	std::cout << " -> ********************* ! <-" << std::endl << std::endl;
 	for (size_t i = 0; i < 4; i++)
 	{
 		if (i % 2 == 0)
@@ -25,12 +29,21 @@ int main()
 		{
 			animals[i] = new Dog();
 		}
+		std::cout << std::endl;
 	}
+	std::cout << " -> ************** ! <-" << std::endl;
+	std::cout << " -> TESTS OUT HERE ! <-" << std::endl;
+	std::cout << " -> ************** ! <-" << std::endl << std::endl;
 	for (size_t i = 0; i < 4; i++)
 	{
 		animals[i]->makeSound();
 		delete animals[i];
 	}
-	// Dog basic;
-	// Dog tmp = basic;
+	std::cout << std::endl;
+	std::cout << " -> ******************** ! <-" << std::endl;
+	std::cout << " -> ASSIGNATION OUT HERE ! <-" << std::endl;
+	std::cout << " -> ******************** ! <-" << std::endl << std::endl;
+
+	Dog basic;
+	Dog tmp = basic;
 }

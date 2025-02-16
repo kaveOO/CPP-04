@@ -18,13 +18,12 @@ class WrongAnimal
 {
 	protected:
 		std::string type;
-		std::string sound;
-	public:
-		// Constructor(s)
-		WrongAnimal();
+		std::string noise;
 		WrongAnimal(const WrongAnimal &WrongAnimal);
+		WrongAnimal();
+	public:
 		// Destructor(s)
-		~WrongAnimal();
+		virtual ~WrongAnimal();
 		// Overload Operator(s)
 		WrongAnimal &operator=(const WrongAnimal &Assign);
 		// Getter(s)
