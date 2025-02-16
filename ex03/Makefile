@@ -3,10 +3,10 @@ name		=	InterfaceAndRecap
 CPP			=	c++
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98 -g
 
-SRC			=	main.cpp		\
-				AMateria.cpp	\
+SRC			=	main.cpp			\
+				src/AMateria.cpp	\
 
-OBJ 		= $(src/SRC:.cpp=.o)
+OBJ 		= $(SRC:.cpp=.o)
 
 $(name): $(OBJ)
 	$(CPP) $(CFLAGS) -o $(name) $(OBJ)

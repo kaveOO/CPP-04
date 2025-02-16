@@ -6,13 +6,15 @@
 /*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 02:20:42 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/16 02:48:22 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/16 02:55:17 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <iostream>
+
+class ICharacter;
 
 class AMateria
 {
