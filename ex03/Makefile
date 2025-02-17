@@ -4,7 +4,10 @@ CPP			=	c++
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98 -g
 
 SRC			=	main.cpp			\
-				src/AMateria.cpp	\
+				AMateria.cpp		\
+				Cure.cpp			\
+				Ice.cpp				\
+				ICharacter.cpp 		\
 
 OBJ 		= $(SRC:.cpp=.o)
 

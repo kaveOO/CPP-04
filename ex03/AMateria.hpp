@@ -12,9 +12,8 @@
 
 #pragma once
 
+#include "ICharacter.hpp"
 #include <iostream>
-
-class ICharacter;
 
 class AMateria
 {
@@ -25,11 +24,8 @@ class AMateria
 		// Constructor(s)
 		AMateria();
 		AMateria(std::string const &type);
-		AMateria(const AMateria &src);
 		// Destructor(S)
 		~AMateria();
-		// Overload Operator(s)
-		AMateria &operator=(const AMateria &assign);
 		// Getter(S)
 		std::string const &getType() const;
 		// Other Function(s)
