@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 04:43:24 by kave0             #+#    #+#             */
-/*   Updated: 2025/02/17 20:33:30 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/18 05:25:42 by kave0            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #include "ICharacter.hpp"
 

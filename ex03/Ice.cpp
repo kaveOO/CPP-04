@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Ice.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 04:24:32 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/16 04:50:57 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/18 05:28:31 by kave0            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ Ice::Ice() : AMateria("ice")
 	std::cout << "Ice -> Default constructor has been constructed" << std::endl;
 }
 
-Ice::Ice(const Ice &src) : AMateria(src)
+Ice::Ice(const Ice &src) : AMateria("ice")
 {
+	(void) src;
 	std::cout << "Ice -> Copy constructor has been called" << std::endl;
-	*this = src;
 }
 
 // Destructor(s)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 02:20:42 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/16 04:21:59 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/18 05:14:49 by kave0            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 #include "ICharacter.hpp"
 #include <iostream>
+
+class ICharacter;
 
 class AMateria
 {
@@ -25,11 +27,11 @@ class AMateria
 		AMateria();
 		AMateria(std::string const &type);
 		// Destructor(S)
-		~AMateria();
+		virtual ~AMateria();
 		// Getter(S)
 		std::string const &getType() const;
 		// Other Function(s)
-		virtual AMateria *clone() const = 0;
+		virtual AMateria* clone() const = 0;
 		virtual void use(ICharacter &target);
 };
 

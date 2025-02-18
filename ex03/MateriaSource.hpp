@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Ice.hpp                                            :+:      :+:    :+:   */
+/*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/16 03:50:24 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/18 05:28:58 by kave0            ###   ########.fr       */
+/*   Created: 2025/02/18 04:48:47 by kave0             #+#    #+#             */
+/*   Updated: 2025/02/18 04:58:34 by kave0            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include "AMateria.hpp"
-#include "ICharacter.hpp"
+#include "IMateriaSource.hpp"
 
-class Ice : public AMateria
+class MateriaSource : public IMateriaSource
 {
+	private:
+		AMateria *blueprint[4];
 	public:
 		// Constructor(s)
-		Ice();
-		Ice(const Ice &src);
+		MateriaSource();
+		MateriaSource(const MateriaSource &copy);
 		// Destructor(s)
-		~Ice();
-		// Overloard Operator(s)
-		Ice &operator=(const Ice &assign);
-		// Other(s) Function(s)
-		AMateria *clone() const;
-		void use(ICharacter &target);
+		~MateriaSource();
+		// Overload Operator(s)
+		MateriaSource &operator=(const MateriaSource &assign);
+		// MateriaSource Functions
+		void learnMateria(AMateria*);
+		AMateria* createMateria(std::string const &type);
 };

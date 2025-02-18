@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 02:20:26 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/16 04:04:34 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/18 05:21:07 by kave0            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ AMateria::~AMateria()
 // Getter(S)
 std::string const &AMateria::getType() const
 {
-	return (type);
+	return (this->type);
 }
 
 // Other Function(s)

@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 04:57:34 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/16 05:00:57 by albillie         ###   ########.fr       */
+/*   Updated: 2025/02/18 05:26:32 by kave0            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 
 // Constructor(s)
-Cure::Cure() : AMateria("Cure")
+Cure::Cure() : AMateria("cure")
 {
-	std::cout << "Cure -> Default constructor has been constructed" << std::endl;
+	std::cout << "Cure -> Default constructor has been called" << std::endl;
 }
 
-Cure::Cure(const Cure &src) : AMateria(src)
+Cure::Cure(const Cure &src) : AMateria("cure")
 {
+	(void) src;
 	std::cout << "Cure -> Copy constructor has been called" << std::endl;
-	*this = src;
 }
 
 // Destructor(s)
