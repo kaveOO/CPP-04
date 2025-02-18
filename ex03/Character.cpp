@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
+/*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 04:52:27 by kave0             #+#    #+#             */
-/*   Updated: 2025/02/18 05:34:48 by kave0            ###   ########.fr       */
+/*   Updated: 2025/02/18 16:13:20 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ void Character::equip(AMateria *m)
 	{
 		if (this->gear[i] == NULL)
 		{
-			// std::cout << this->getName() << " equiped " << m->getType() << " in his gear" << std::endl;
+			std::cout << this->getName() << " equiped " << m->getType() << " in his gear" << std::endl;
 			this->gear[i] = m->clone();
 			return ;
 		}

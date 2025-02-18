@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kave0 <kave0@student.42.fr>                +#+  +:+       +#+        */
+/*   By: albillie <albillie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 02:21:17 by albillie          #+#    #+#             */
-/*   Updated: 2025/02/18 05:44:03 by kave0            ###   ########.fr       */
+/*   Updated: 2025/02/18 16:21:29 by albillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 int main()
 {
 	IMateriaSource* src = new MateriaSource();
-	/* Modified this part of the main as it was irrelevant/absurd for learnMateria to have to delete AMateria instance passed as parameter */
 	AMateria *ice = new Ice() ;
 	AMateria *cure = new Cure() ;
 	src->learnMateria(ice);
@@ -32,7 +31,6 @@ int main()
 
 	ICharacter* me = new Character("me");
 
-	/* Same goes here, modified this part of the main as it was irrelevant/absurd for equip to have to delete AMateria instance passed as parameter */
 	AMateria* tmp;
 	tmp = src->createMateria("ice");
 	me->equip(tmp);
